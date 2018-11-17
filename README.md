@@ -71,8 +71,7 @@
 
 * leader  领导者  领导者负责进行投票的发起和决议，更新系统的状态。
 * learner 学习者 follower  跟随者  follower 用于接收客户请求并向客户端返回结果，在选主过程中参与投票。
-* learner 学习者  observer observer 可以接收客户端连接，将写请求 转发给leader节点。但observer 不参与
-* 投票过程，只同步leader的状态，observer 的目的是为了扩展系统，提高读取的速度。
+* learner 学习者  observer observer 可以接收客户端连接，将写请求 转发给leader节点。但observer 不参与投票过程，只同步leader的状态，observer 的目的是为了扩展系统，提高读取的速度。
 
 client  客户端，请求的发起方
 
